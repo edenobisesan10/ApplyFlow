@@ -18,7 +18,10 @@ import {
 function App() {
   // Store our job applications
 
-  const [applications, setApplications] = useState([]);
+  const [applications, setApplications] = useState(() => {
+    const savedApplications = localStorage.getItem("applications");
+    return savedApplications ? JSON.parse(savedApplications) : [];
+  });
   const [userName, setUserName] = useState(() => {
     return localStorage.getItem("userName") || "";
   });

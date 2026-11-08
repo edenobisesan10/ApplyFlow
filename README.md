@@ -36,7 +36,7 @@ Make sure you have Node.js and npm installed.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/edenobisesan10/ApplyFlow
+   git clone https://github.com/edenobisesan10/ApplyFlow.git
    ```
 
 2. Navigate into the project folder:
